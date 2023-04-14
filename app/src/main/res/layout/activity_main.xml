@@ -12,13 +12,14 @@
         android:id="@+id/text_day"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:layout_marginTop="15dp"
-        android:text="Week of Day"
+        android:gravity="center"
+        android:text="@string/text_week_of_day"
         android:textColor="@color/white"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
 
     <View
         android:id="@+id/view"
@@ -32,20 +33,20 @@
         android:id="@+id/image_logo"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:contentDescription="@string/text_todo"
         android:src="@drawable/duvidas"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintTop_toBottomOf="@+id/text_day"
-        app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="59dp" />
+        tools:ignore="ContentDescription,ImageContrastCheck" />
     
     <LinearLayout
         android:id="@+id/container_week"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:background="@drawable/shape_container_week"
         android:orientation="vertical"
         android:paddingHorizontal="15dp"
         android:paddingTop="15dp"
-        android:background="@drawable/shape_container_week"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/view">
 
@@ -65,21 +66,25 @@
                     app:cardBackgroundColor="@color/cor_segunda"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="0dp">
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:paddingHorizontal="20dp"
-                        android:text="Monday"
+                        android:text="@string/text_monday"
                         android:textColor="@color/white"
-                        android:textSize="22dp"
-                        android:textStyle="bold"/>
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        tools:ignore="TextContrastCheck" />
 
                     <ImageView
                         android:layout_width="133dp"
                         android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/seg" />
+                        android:src="@drawable/seg"
+                        tools:ignore="ContentDescription,ImageContrastCheck" />
+
                 </androidx.cardview.widget.CardView>
 
                 <View
@@ -92,23 +97,25 @@
                     android:layout_height="120dp"
                     app:cardBackgroundColor="@color/cor_terca"
                     app:cardCornerRadius="20dp"
-                    app:cardElevation="12dp">
+                    app:cardElevation="0dp">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:paddingHorizontal="20dp"
-                        android:text="Tuesday"
+                        android:text="@string/text_tuesday"
                         android:textColor="@color/white"
-                        android:textSize="22dp"
+                        android:textSize="22sp"
                         android:textStyle="bold"/>
 
                     <ImageView
                         android:layout_width="88dp"
                         android:layout_height="117dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/terc" />
+                        android:src="@drawable/terc"
+                        tools:ignore="ContentDescription" />
+
                 </androidx.cardview.widget.CardView>
 
                 <View
@@ -121,23 +128,25 @@
                     android:layout_height="120dp"
                     app:cardBackgroundColor="@color/cor_quarta"
                     app:cardCornerRadius="20dp"
-                    app:cardElevation="12dp">
+                    app:cardElevation="0dp">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:paddingHorizontal="20dp"
-                        android:text="Wednesday"
+                        android:text="@string/text_wednesday"
                         android:textColor="@color/white"
-                        android:textSize="22dp"
+                        android:textSize="22sp"
                         android:textStyle="bold"/>
 
                     <ImageView
                         android:layout_width="78dp"
                         android:layout_height="117dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/quart" />
+                        android:src="@drawable/quart"
+                        tools:ignore="ContentDescription" />
+
                 </androidx.cardview.widget.CardView>
 
                 <View
@@ -150,23 +159,25 @@
                     android:layout_height="120dp"
                     app:cardBackgroundColor="@color/cor_quinta"
                     app:cardCornerRadius="20dp"
-                    app:cardElevation="12dp">
+                    app:cardElevation="0dp">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:paddingHorizontal="20dp"
-                        android:text="Thursday"
+                        android:text="@string/text_thursday"
                         android:textColor="@color/white"
-                        android:textSize="22dp"
+                        android:textSize="22sp"
                         android:textStyle="bold"/>
 
                     <ImageView
                         android:layout_width="78dp"
                         android:layout_height="117dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/quint" />
+                        android:src="@drawable/quint"
+                        tools:ignore="ContentDescription" />
+
                 </androidx.cardview.widget.CardView>
 
                 <View
@@ -179,23 +190,25 @@
                     android:layout_height="120dp"
                     app:cardBackgroundColor="@color/cor_sexta"
                     app:cardCornerRadius="20dp"
-                    app:cardElevation="12dp">
+                    app:cardElevation="0dp">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:paddingHorizontal="20dp"
-                        android:text="Friday"
+                        android:text="@string/text_friday"
                         android:textColor="@color/white"
-                        android:textSize="22dp"
+                        android:textSize="22sp"
                         android:textStyle="bold"/>
 
                     <ImageView
                         android:layout_width="78dp"
                         android:layout_height="117dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/sext" />
+                        android:src="@drawable/sext"
+                        tools:ignore="ContentDescription" />
+
                 </androidx.cardview.widget.CardView>
 
                 <View
@@ -208,23 +221,25 @@
                     android:layout_height="120dp"
                     app:cardBackgroundColor="@color/cor_sabado"
                     app:cardCornerRadius="20dp"
-                    app:cardElevation="12dp">
+                    app:cardElevation="0dp">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:paddingHorizontal="20dp"
-                        android:text="Saturday"
+                        android:text="@string/text_saturday"
                         android:textColor="@color/white"
-                        android:textSize="22dp"
+                        android:textSize="22sp"
                         android:textStyle="bold"/>
 
                     <ImageView
                         android:layout_width="78dp"
                         android:layout_height="117dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/sabad" />
+                        android:src="@drawable/sabad"
+                        tools:ignore="ContentDescription" />
+
                 </androidx.cardview.widget.CardView>
 
                 <View
@@ -236,25 +251,31 @@
                     android:layout_width="match_parent"
                     android:layout_height="120dp"
                     app:cardBackgroundColor="@color/cor_domingo"
-                    app:cardCornerRadius="20dp"
-                    app:cardElevation="12dp">
+                    app:cardCornerRadius="20sp"
+                    app:cardElevation="0dp">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:paddingHorizontal="20dp"
-                        android:text="Sunday"
+                        android:text="@string/text_sunday"
                         android:textColor="@color/white"
-                        android:textSize="22dp"
-                        android:textStyle="bold"/>
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
 
                     <ImageView
                         android:layout_width="78dp"
                         android:layout_height="117dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/doming" />
+                        android:src="@drawable/doming"
+                        tools:ignore="ContentDescription" />
+
                 </androidx.cardview.widget.CardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
 
             </LinearLayout>
 
